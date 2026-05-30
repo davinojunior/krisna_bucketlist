@@ -1,14 +1,12 @@
-# NAMA:Davino callysta junior
-# KELAS:XI tkj 4
-# ABSEN:5
+
 import os
 from flask import Flask, render_template, request, jsonify
 from pymongo import MongoClient
 
-MONGO_URI = os.getenv('MONGO_URI', 'mongodb+srv://davino:davino@cluster0.tdkcdhp.mongodb.net/?appName=Cluster0')
+MONGO_URI = os.getenv('MONGO_URI', 'mongodb+srv://test:sparta@cluster0.elqdmh1.mongodb.net/?appName=Cluster0')
 client = MongoClient(MONGO_URI)
 
-db = client.dbdavino
+db = client.dbsparta
 app = Flask(__name__)
 
 @app.route('/')
